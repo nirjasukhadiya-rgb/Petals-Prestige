@@ -1,0 +1,30 @@
+
+      @font-face { font-family: nav; src: url(/Fonts/Iosevka_Charon); }
+      .p { font-family: nav; }
+      .nav-link { position: relative; text-decoration: none; }
+      .nav-link::after { content: ''; position: absolute; bottom: -4px; left: 0; width: 0; height: 1px; background: #7D562D; transition: width 0.3s ease; }
+      .nav-link:hover::after { width: 100%; }
+      .nav-link:hover { color: #7D562D; transition: color 0.3s ease; }
+      .nav-link-active { color: #7D562D; position: relative; }
+      .nav-link-active::after { content: ''; position: absolute; bottom: -4px; left: 0; width: 100%; height: 1px; background: #7D562D; }
+      .bag-icon { transition: transform 0.3s ease; cursor: pointer; }
+      .bag-icon:hover { transform: scale(1.15); }
+      .nav-scrolled { box-shadow: 0 2px 20px rgba(0,0,0,0.08); backdrop-filter: blur(12px); }
+      .gsap-hidden { opacity: 0; }
+      .mobile-link { transition: color 0.2s ease, padding-left 0.2s ease; }
+      .mobile-link:hover { color: #7D562D; padding-left: 8px; }
+      .footer-link { transition: color 0.2s ease; }
+      .footer-link:hover { color: #FFDEA6; }
+      /* Timeline */
+      .timeline-item { border-left: 2px solid #E5DDD5; padding-left: 28px; position: relative; }
+      .timeline-item::before { content: ''; position: absolute; left: -6px; top: 6px; width: 10px; height: 10px; border-radius: 50%; background: #A6947B; }
+      /* Stat hover */
+      .stat-item { transition: transform 0.3s ease; }
+      .stat-item:hover { transform: translateY(-4px); }
+      /* Play button */
+      .play-btn { transition: all 0.3s ease; }
+      .play-icon { transition: all 0.3s ease; }
+      .play-btn:hover .play-icon { background: black; color: white; transform: scale(1.1); }
+      .subscribe-btn { transition: opacity 0.3s ease, transform 0.3s ease; }
+      .subscribe-btn:hover { opacity: 0.9; transform: translateY(-1px); }
+   

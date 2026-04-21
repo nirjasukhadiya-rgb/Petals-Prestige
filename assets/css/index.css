@@ -1,0 +1,126 @@
+
+      @font-face {
+        font-family: nav;
+        src: url(/Fonts/Iosevka_Charon);
+      }
+      .p { font-family: nav; }
+
+      /* Nav link hover underline effect */
+      .nav-link {
+        position: relative;
+        text-decoration: none;
+      }
+      .nav-link::after {
+        content: '';
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        width: 0;
+        height: 1px;
+        background: #7D562D;
+        transition: width 0.3s ease;
+      }
+      .nav-link:hover::after { width: 100%; }
+      .nav-link:hover { color: #7D562D; transition: color 0.3s ease; }
+
+      /* Active nav link */
+      .nav-link-active {
+        color: #7D562D;
+        position: relative;
+      }
+      .nav-link-active::after {
+        content: '';
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background: #7D562D;
+      }
+
+      /* Card hover lift */
+      .card-hover {
+        transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      }
+      .card-hover:hover { transform: translateY(-8px); }
+
+      /* Button hover effects */
+      .btn-dark {
+        position: relative;
+        overflow: hidden;
+        transition: all 0.3s ease;
+      }
+      .btn-dark::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: #2d5237;
+        transform: translateX(-100%);
+        transition: transform 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      }
+      .btn-dark:hover::before { transform: translateX(0); }
+      .btn-dark span { position: relative; z-index: 1; }
+
+      /* Play button hover */
+      .play-btn { transition: all 0.3s ease; }
+      .play-btn:hover .play-icon {
+        background: black;
+        color: white;
+        transform: scale(1.1);
+      }
+      .play-icon { transition: all 0.3s ease; }
+
+      /* Shopping bag icon hover */
+      .bag-icon {
+        transition: transform 0.3s ease;
+        cursor: pointer;
+      }
+      .bag-icon:hover { transform: scale(1.15); }
+
+      /* Image zoom overlay */
+      .img-overlay {
+        position: absolute;
+        inset: 0;
+        background: rgba(0,0,0,0.08);
+        opacity: 0;
+        transition: opacity 0.35s ease;
+      }
+      .group:hover .img-overlay { opacity: 1; }
+
+      /* Navbar scroll effect */
+      .nav-scrolled {
+        box-shadow: 0 2px 20px rgba(0,0,0,0.08);
+        backdrop-filter: blur(12px);
+      }
+
+      /* Invisible initially for GSAP */
+      .gsap-hidden { opacity: 0; }
+
+      /* Mobile menu link hover */
+      .mobile-link {
+        transition: color 0.2s ease, padding-left 0.2s ease;
+      }
+      .mobile-link:hover { color: #7D562D; padding-left: 8px; }
+
+      /* Botanical shadow */
+      .botanical-shadow {
+        box-shadow: 8px 8px 30px rgba(0,0,0,0.12);
+      }
+
+      /* Footer link hover */
+      .footer-link {
+        transition: color 0.2s ease;
+      }
+      .footer-link:hover { color: #FFDEA6; }
+
+      /* Cursor trail effect on hero */
+      .hero-section { cursor: default; }
+
+      /* Subscribe btn hover */
+      .subscribe-btn {
+        transition: opacity 0.3s ease, transform 0.3s ease;
+      }
+      .subscribe-btn:hover {
+        opacity: 0.9;
+        transform: translateY(-1px);
+      }

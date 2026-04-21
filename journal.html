@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Journal — Petals & Prestige</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="icon" href="./assets/images/icon1.webp" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu,play_arrow,shopping_bag" />
+    
+    
+  </head>
+  <body>
+    <!-- nav -->
+    <div id="navbar" class="fixed top-0 z-50 flex items-center justify-between w-full h-16 sm:h-18 md:h-20 px-4 sm:px-6 md:px-10 bg-[#fcf9f5]/90 transition-all duration-300">
+      <div class="p font-medium text-lg sm:text-xl md:text-2xl gsap-hidden" id="nav-logo">
+        <a href="index.html"><i>Petals & Prestige</i></a>
+      </div>
+      <div class="hidden md:flex items-center gap-6 gsap-hidden" id="nav-links">
+        <a class="p nav-link" href="boutique.html">BOUTIQUE</a>
+        <a class="p nav-link" href="occasions.html">OCCASIONS</a>
+        <a class="p nav-link" href="our-story.html">OUR STORY</a>
+        <a class="p nav-link-active" href="journal.html">JOURNAL</a>
+        <span class="material-symbols-outlined bag-icon">shopping_bag</span>
+      </div>
+      <div class="md:hidden flex items-center gap-4">
+        <span class="material-symbols-outlined bag-icon">shopping_bag</span>
+        <span class="material-symbols-outlined bag-icon" onclick="document.getElementById('mobileMenu').classList.toggle('hidden')">menu</span>
+      </div>
+    </div>
+    <div id="mobileMenu" class="hidden fixed top-16 left-0 w-full z-40 bg-[#fcf9f5] shadow-md md:hidden flex flex-col px-6 py-6 gap-5">
+      <a class="p text-[#7D562D] text-sm tracking-widest mobile-link" href="boutique.html">BOUTIQUE</a>
+      <a class="p text-sm tracking-widest mobile-link" href="occasions.html">OCCASIONS</a>
+      <a class="p text-sm tracking-widest mobile-link" href="our-story.html">OUR STORY</a>
+      <a class="p text-sm tracking-widest mobile-link" href="journal.html">JOURNAL</a>
+    </div>
+
+    <!-- Page Hero -->
+    <div class="bg-[#FCF9F5] pt-36 pb-16 px-4 sm:px-10 text-center">
+      <p class="p uppercase tracking-[4px] text-xs text-[#A6947B] mb-4 gsap-hidden" id="ph-label">Stories & Seasons</p>
+      <h1 class="p text-3xl sm:text-5xl md:text-6xl mb-6 gsap-hidden" id="ph-title">The Journal</h1>
+      <p class="p text-[#434843] text-base sm:text-lg max-w-2xl mx-auto gsap-hidden" id="ph-sub">
+        Insights on floristry, behind-the-scenes from our ateliers, seasonal guides, and the art of living beautifully.
+      </p>
+    </div>
+
+    <!-- Featured Post -->
+    <section class="px-4 sm:px-8 md:px-12 pb-12 bg-[#FCF9F5]">
+      <div class="max-w-6xl mx-auto">
+        <div class="flex flex-col md:flex-row gap-8 journal-card featured-post gsap-hidden">
+          <div class="w-full md:w-1/2 overflow-hidden">
+            <img src="./assets/images/f14.jpg" alt="Featured Post" class="w-full h-[300px] sm:h-[400px] md:h-[480px] object-cover" />
+          </div>
+          <div class="w-full md:w-1/2 flex flex-col justify-center py-4 md:py-8">
+            <div class="flex gap-3 mb-5">
+              <span class="tag p text-[10px] uppercase tracking-widest px-3 py-1 border border-[#A6947B] text-[#A6947B] cursor-pointer">Seasonality</span>
+              <span class="tag p text-[10px] uppercase tracking-widest px-3 py-1 border border-[#A6947B] text-[#A6947B] cursor-pointer">Craft</span>
+            </div>
+            <p class="p text-xs text-gray-400 tracking-widest mb-3">MAY 2024</p>
+            <h2 class="p text-2xl sm:text-3xl md:text-4xl mb-4">The Language of Peonies: What Each Colour Means</h2>
+            <p class="text-sm text-gray-500 mb-6 leading-relaxed">
+              From the delicate blush of Sarah Bernhardt to the deep coral of Coral Charm — every peony carries a message. We trace the symbolic language of the season's most beloved bloom.
+            </p>
+            <a class="read-more p text-sm tracking-widest text-[#434843] transition-colors duration-300">Read More →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Post Grid -->
+    <section class="py-16 px-4 sm:px-8 md:px-12 bg-white">
+      <div class="max-w-6xl mx-auto">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 md:gap-10">
+
+          <div class="journal-card gsap-hidden">
+            <div class="overflow-hidden mb-4">
+              <img src="./assets/images/f8.jpg" alt="Journal post" class="w-full h-56 sm:h-64 object-cover" />
+            </div>
+            <div class="flex gap-2 mb-3">
+              <span class="tag p text-[10px] uppercase tracking-widest px-2 py-1 border border-gray-300 text-gray-500 cursor-pointer">Sourcing</span>
+            </div>
+            <p class="p text-xs text-gray-400 tracking-widest mb-2">APRIL 2024</p>
+            <h3 class="p text-lg sm:text-xl mb-2">Inside the Aalsmeer Auction: A Diary</h3>
+            <p class="text-sm text-gray-500 mb-4">A pre-dawn journey through the world's largest flower market — where millions of stems change hands before sunrise.</p>
+            <a class="read-more p text-sm tracking-widest text-[#434843]">Read More →</a>
+          </div>
+
+          <div class="journal-card gsap-hidden">
+            <div class="overflow-hidden mb-4">
+              <img src="./assets/images/f9.jpg" alt="Journal post" class="w-full h-56 sm:h-64 object-cover" />
+            </div>
+            <div class="flex gap-2 mb-3">
+              <span class="tag p text-[10px] uppercase tracking-widest px-2 py-1 border border-gray-300 text-gray-500 cursor-pointer">Wedding</span>
+            </div>
+            <p class="p text-xs text-gray-400 tracking-widest mb-2">MARCH 2024</p>
+            <h3 class="p text-lg sm:text-xl mb-2">Choosing Florals for Your Wedding Season</h3>
+            <p class="text-sm text-gray-500 mb-4">Spring roses or autumn dahlias? Our lead designer walks through the seasonal case for each.</p>
+            <a class="read-more p text-sm tracking-widest text-[#434843]">Read More →</a>
+          </div>
+
+          <div class="journal-card gsap-hidden">
+            <div class="overflow-hidden mb-4">
+              <img src="./assets/images/f15.jpg" alt="Journal post" class="w-full h-56 sm:h-64 object-cover" />
+            </div>
+            <div class="flex gap-2 mb-3">
+              <span class="tag p text-[10px] uppercase tracking-widest px-2 py-1 border border-gray-300 text-gray-500 cursor-pointer">Living</span>
+            </div>
+            <p class="p text-xs text-gray-400 tracking-widest mb-2">FEBRUARY 2024</p>
+            <h3 class="p text-lg sm:text-xl mb-2">The Art of Caring for Cut Flowers at Home</h3>
+            <p class="text-sm text-gray-500 mb-4">A guide to extending the life and beauty of your arrangements — from vase preparation to water chemistry.</p>
+            <a class="read-more p text-sm tracking-widest text-[#434843]">Read More →</a>
+          </div>
+
+          <div class="journal-card gsap-hidden">
+            <div class="overflow-hidden mb-4">
+              <img src="./assets/images/f16.jpg" alt="Journal post" class="w-full h-56 sm:h-64 object-cover" />
+            </div>
+            <div class="flex gap-2 mb-3">
+              <span class="tag p text-[10px] uppercase tracking-widest px-2 py-1 border border-gray-300 text-gray-500 cursor-pointer">Craft</span>
+            </div>
+            <p class="p text-xs text-gray-400 tracking-widest mb-2">JANUARY 2024</p>
+            <h3 class="p text-lg sm:text-xl mb-2">The Ribbon Technique: A Study in Restraint</h3>
+            <p class="text-sm text-gray-500 mb-4">Our signature silk ribbon wrapping — the small detail that transforms an arrangement into a gift.</p>
+            <a class="read-more p text-sm tracking-widest text-[#434843]">Read More →</a>
+          </div>
+
+          <div class="journal-card gsap-hidden">
+            <div class="overflow-hidden mb-4">
+              <img src="./assets/images/f12.jpg" alt="Journal post" class="w-full h-56 sm:h-64 object-cover" />
+            </div>
+            <div class="flex gap-2 mb-3">
+              <span class="tag p text-[10px] uppercase tracking-widest px-2 py-1 border border-gray-300 text-gray-500 cursor-pointer">Sourcing</span>
+            </div>
+            <p class="p text-xs text-gray-400 tracking-widest mb-2">DECEMBER 2023</p>
+            <h3 class="p text-lg sm:text-xl mb-2">A Winter's Visit to Shizuoka, Japan</h3>
+            <p class="text-sm text-gray-500 mb-4">Meeting the growers behind our favourite Japanese anemones and garden roses in the foothills of Fuji.</p>
+            <a class="read-more p text-sm tracking-widest text-[#434843]">Read More →</a>
+          </div>
+
+          <div class="journal-card gsap-hidden">
+            <div class="overflow-hidden mb-4">
+              <img src="./assets/images/f13.jpg" alt="Journal post" class="w-full h-56 sm:h-64 object-cover" />
+            </div>
+            <div class="flex gap-2 mb-3">
+              <span class="tag p text-[10px] uppercase tracking-widest px-2 py-1 border border-gray-300 text-gray-500 cursor-pointer">Atelier</span>
+            </div>
+            <p class="p text-xs text-gray-400 tracking-widest mb-2">NOVEMBER 2023</p>
+            <h3 class="p text-lg sm:text-xl mb-2">Behind the Atelier: A Day in the Chelsea Studio</h3>
+            <p class="text-sm text-gray-500 mb-4">From dawn delivery to last light — a rare glimpse into a full working day at our original London studio.</p>
+            <a class="read-more p text-sm tracking-widest text-[#434843]">Read More →</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="py-16 sm:py-20 md:py-32 px-4 sm:px-8 md:px-12 bg-[#E6ECE3]" id="newsletter-section">
+      <div class="max-w-3xl mx-auto text-center">
+        <h2 class="p text-2xl sm:text-3xl md:text-5xl newsletter-title gsap-hidden">Join the Atelier</h2>
+        <p class="p text-[#434843] text-base sm:text-lg mt-3 sm:mt-4 mb-8 sm:mb-12 newsletter-sub gsap-hidden">
+          Receive seasonal curation updates, exclusive invitations to floral workshops, and the stories behind our <br class="hidden sm:block" /> latest blooms.
+        </p>
+        <form class="flex flex-col sm:flex-col md:flex-row gap-4 items-stretch md:items-end newsletter-form gsap-hidden" action="">
+          <div class="flex-1 w-full text-left">
+            <label class="text-[10px] uppercase tracking-widest text-[#A6947B] ml-1 mb-2 block">Email Address</label>
+            <input class="w-full bg-transparent border-0 border-b border-gray-400 focus:border-black focus:outline-none duration-300 py-3 px-1" placeholder="atelier@luxury.com" type="email" />
+          </div>
+          <button class="subscribe-btn p text-sm bg-gradient-to-r from-[#FCDCA2] to-[#F8C153] uppercase tracking-widest py-3 px-8 w-full md:w-auto" type="submit">Subscribe</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <div class="py-10 sm:py-12 md:py-16 px-4 sm:px-8 md:px-20 bg-[#1B3022]" id="footer">
+      <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-8 sm:gap-10 border-b border-[#324438] pb-8 sm:pb-10">
+        <div class="col-span-3 sm:col-span-2 md:col-span-1">
+          <h1 class="p text-[#FFDEA6] text-lg sm:text-xl mb-4 sm:mb-5">Petals & Prestige</h1>
+          <p class="p text-[#B9BDB6] text-sm sm:text-base">London — Paris — New York</p>
+        </div>
+        <div>
+          <h1 class="p text-white uppercase mb-3 sm:mb-4 text-sm sm:text-base">Boutique</h1>
+          <a class="p block text-[#B9BDB6] mb-2 text-sm footer-link" href="boutique.html">Store Locations</a>
+          <a class="p block text-[#B9BDB6] mb-2 text-sm footer-link" href="occasions.html">Private Events</a>
+        </div>
+        <div>
+          <h1 class="p text-white uppercase mb-3 sm:mb-4 text-sm sm:text-base">Client Care</h1>
+          <a class="p block text-[#B9BDB6] mb-2 text-sm footer-link">Delivery Info</a>
+        </div>
+        <div>
+          <h1 class="p text-white uppercase mb-3 sm:mb-4 text-sm sm:text-base">Social</h1>
+          <a class="p block text-[#B9BDB6] mb-2 text-sm footer-link">Instagram</a>
+        </div>
+      </div>
+      <div class="flex flex-col md:flex-row justify-between items-center pt-5 sm:pt-6 text-xs sm:text-sm text-[#B9BDB6] gap-3 sm:gap-4">
+        <div>© 2024 Petals & Prestige</div>
+        <div class="flex gap-4">
+          <a class="footer-link">Privacy Policy</a>
+          <a class="footer-link">Terms</a>
+        </div>
+      </div>
+    </div>
+
+    
+  </body>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+
+  <script src="./assets/javascript/journal.js"></script>
+  <link rel="stylesheet" href="./assets/css/journal.css">
+</html>

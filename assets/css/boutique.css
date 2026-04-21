@@ -1,0 +1,33 @@
+
+      @font-face { font-family: nav; src: url(/Fonts/Iosevka_Charon); }
+      .p { font-family: nav; }
+      .nav-link { position: relative; text-decoration: none; }
+      .nav-link::after { content: ''; position: absolute; bottom: -4px; left: 0; width: 0; height: 1px; background: #7D562D; transition: width 0.3s ease; }
+      .nav-link:hover::after { width: 100%; }
+      .nav-link:hover { color: #7D562D; transition: color 0.3s ease; }
+      .nav-link-active { color: #7D562D; position: relative; }
+      .nav-link-active::after { content: ''; position: absolute; bottom: -4px; left: 0; width: 100%; height: 1px; background: #7D562D; }
+      .card-hover { transition: transform 0.4s cubic-bezier(0.25,0.46,0.45,0.94); }
+      .card-hover:hover { transform: translateY(-8px); }
+      .btn-dark { position: relative; overflow: hidden; transition: all 0.3s ease; }
+      .btn-dark::before { content: ''; position: absolute; inset: 0; background: #2d5237; transform: translateX(-100%); transition: transform 0.35s cubic-bezier(0.25,0.46,0.45,0.94); }
+      .btn-dark:hover::before { transform: translateX(0); }
+      .btn-dark span { position: relative; z-index: 1; }
+      .bag-icon { transition: transform 0.3s ease; cursor: pointer; }
+      .bag-icon:hover { transform: scale(1.15); }
+      .img-overlay { position: absolute; inset: 0; background: rgba(0,0,0,0.08); opacity: 0; transition: opacity 0.35s ease; }
+      .group:hover .img-overlay { opacity: 1; }
+      .nav-scrolled { box-shadow: 0 2px 20px rgba(0,0,0,0.08); backdrop-filter: blur(12px); }
+      .gsap-hidden { opacity: 0; }
+      .mobile-link { transition: color 0.2s ease, padding-left 0.2s ease; }
+      .mobile-link:hover { color: #7D562D; padding-left: 8px; }
+      .footer-link { transition: color 0.2s ease; }
+      .footer-link:hover { color: #FFDEA6; }
+      /* Page hero */
+      .page-hero { background: #F6F3EF; }
+      /* Filter tabs */
+      .filter-tab { transition: all 0.3s ease; border-bottom: 2px solid transparent; }
+      .filter-tab:hover, .filter-tab.active { color: #7D562D; border-color: #7D562D; }
+      .subscribe-btn { transition: opacity 0.3s ease, transform 0.3s ease; }
+      .subscribe-btn:hover { opacity: 0.9; transform: translateY(-1px); }
+  
